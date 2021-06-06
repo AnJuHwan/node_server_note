@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>Check out our Courses</h1>
+    <!-- 각 라인에서 끝날때는 <% %> 닫아줘야함 -->
+    <!-- 데이터를 받아 올때는 <%= %> : = 모양을 추가해줘야함 -->
+    <!-- 그냥 js문법을 사용할 때는 <% %> : 로 사용함 -->
+    <ul>
+      <% courses.forEach(course => { %>
+      <li><%= course.name %></li>
+
+      <%}) %>
+    </ul>
+  </body>
+</html>
